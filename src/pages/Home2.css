@@ -1,0 +1,20 @@
+
+.titlecontainer{
+    display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  align-items: center;
+
+}
+
+.titlecontainer h2{
+  text-align: center;
+  text-transform: uppercase;
+  width: 40%;
+  margin-left: 5%;
+}
+.titlecontainer img{
+    max-inline-size: 100%;
+  block-size: auto;
+  margin-left: 10%;
+}

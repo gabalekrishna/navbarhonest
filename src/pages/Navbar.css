@@ -1,0 +1,128 @@
+
+.container {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 12%;
+    transition: all 0.5s ease;
+    height: 10%;
+    background-color: black;
+  }
+  
+  .logo {
+    position: relative;
+    text-decoration: none;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    color: white;
+    font-weight: 700;
+  }
+  
+  .navbar {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .navbar li {
+    position: relative;
+    list-style: none;
+  }
+  
+  .navbar li a {
+    position: relative;
+    margin: 0 15px;
+    text-decoration: none;
+    color: #fff;
+    font-weight: 400; 
+  }
+  
+  .button {
+ color: white;
+  background-color: #0DA34E;
+  border-radius: 30px;
+  padding: 10px 20px; 
+  font-size: 14px; 
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  position: relative; 
+  overflow: hidden;
+  width: 200px;
+  
+
+  }
+  .pen-icon {
+    position: absolute;
+    top: 50%;
+    right: 5px;
+    margin-left: 20px;
+    transform: translateY(-50%);
+    background-color: #0DA34E;
+    color: white;
+    border-radius: 50%;
+    padding: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.5s ease;
+    pointer-events: none; 
+  }
+  .button:hover {
+    background-color: black; 
+  }
+  .button:hover .pen-icon {
+    opacity: 1; 
+  }
+  
+  .headerVisible{
+    visibility: visible;
+    transition: all 0.3s;
+  }
+  .headerHidden {
+    visibility: hidden;
+    transition: all 0.3s;
+    transform: translateY(-100%);
+  }
+  .burger-button {
+    display: none; 
+  }
+  .navbar.mobile-menu-visible {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 100%; 
+    left: 0;
+    background-color: black;
+    width: 100%;
+    padding: 10px 0;
+   
+  }
+ 
+  @media screen and (max-width: 768px) {
+    
+    .container {
+      padding: 20px;
+    }
+  
+    .navbar {
+      flex-direction: column;
+      align-items: flex-start;
+      margin-top: 20px;
+    }
+    .burger-button {
+        display: block; 
+      }
+      .navbar {
+        display: none; 
+  
+    .navbar li a {
+      margin: 10px 0;
+    }
+  }
+}
